@@ -16,14 +16,14 @@ Go to Search Dialog
     SearchDialog.Click Landing Page Search Icon
     SearchDialog.Verify Dialog Loaded
 
-Set Catalogue Parameters | Book1
-    SearchDialog.Set Catalogue Parameters       ${SEARCH_TEXT_BOOK1}
+Set Catalogue Parameters | Book
+    SearchDialog.Set Catalogue Parameters       ${SEARCH_TEXT_BOOK}
 
-Set Catalogue Parameters | Book2
-    SearchDialog.Set Catalogue Parameters       ${SEARCH_TEXT_BOOK2}
+# Set Catalogue Parameters | Book2
+#     SearchDialog.Set Catalogue Parameters       ${SEARCH_TEXT_BOOK2}
 
-Set Catalogue Parameters | Book3
-    SearchDialog.Set Catalogue Parameters       ${SEARCH_TEXT_BOOK3}
+# Set Catalogue Parameters | Book3
+#     SearchDialog.Set Catalogue Parameters       ${SEARCH_TEXT_BOOK3}
 
 
 Perform Search Dialog Search

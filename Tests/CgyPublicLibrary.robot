@@ -15,9 +15,9 @@ Test Teardown   CommonWeb.End Web Test
 *** Variables ***
 ${URL} =        https://www.calgarylibrary.ca
 ${BROWSER} =    chrome
-${SEARCH_TEXT_BOOK1} =                        Fluent Python
-${SEARCH_TEXT_BOOK2} =                        War and Peace
-${SEARCH_TEXT_BOOK3} =                        Jurassic Park
+${SEARCH_TEXT_BOOK} =                        Fluent Python
+# ${SEARCH_TEXT_BOOK2} =                        War and Peace
+# ${SEARCH_TEXT_BOOK3} =                        Jurassic Park
 
 
 
@@ -26,26 +26,26 @@ ${SEARCH_TEXT_BOOK3} =                        Jurassic Park
 Catalogue General Search | Book1
     [Documentation]  Catalogue general search with passed in search term variable
     [Tags]  Smoke Test | Search
-    Log     ${SEARCH_TEXT_BOOK1}
+    Log     ${SEARCH_TEXT_BOOK}
     CgyPublicLibraryApp.Go To Landing Page
     CgyPublicLibraryApp.Go To Search Dialog
-    CgyPublicLibraryApp.Set Catalogue Parameters | Book1
+    CgyPublicLibraryApp.Set Catalogue Parameters | Book
     CgyPublicLibraryApp.Perform Search Dialog Search
 
-Catalogue General Search | Book2
-    [Documentation]  Catalogue general search with passed in search term variable
-    [Tags]  Smoke Test | Search
-    Log     ${SEARCH_TEXT_BOOK2}
-    CgyPublicLibraryApp.Go To Landing Page
-    CgyPublicLibraryApp.Go To Search Dialog
-    CgyPublicLibraryApp.Set Catalogue Parameters | Book2
-    CgyPublicLibraryApp.Perform Search Dialog Search
+# Catalogue General Search | Book2
+#     [Documentation]  Catalogue general search with passed in search term variable
+#     [Tags]  Smoke Test | Search
+#     Log     ${SEARCH_TEXT_BOOK2}
+#     CgyPublicLibraryApp.Go To Landing Page
+#     CgyPublicLibraryApp.Go To Search Dialog
+#     CgyPublicLibraryApp.Set Catalogue Parameters | Book2
+#     CgyPublicLibraryApp.Perform Search Dialog Search
 
-Catalogue General Search | Book3
-    [Documentation]  Catalogue general search with passed in search term variable
-    [Tags]  Smoke Test | Search
-    Log     ${SEARCH_TEXT_BOOK3}
-    CgyPublicLibraryApp.Go To Landing Page
-    CgyPublicLibraryApp.Go To Search Dialog
-    CgyPublicLibraryApp.Set Catalogue Parameters | Book3
-    CgyPublicLibraryApp.Perform Search Dialog Search
+# Catalogue General Search | Book3
+#     [Documentation]  Catalogue general search with passed in search term variable
+#     [Tags]  Smoke Test | Search
+#     Log     ${SEARCH_TEXT_BOOK3}
+#     CgyPublicLibraryApp.Go To Landing Page
+#     CgyPublicLibraryApp.Go To Search Dialog
+#     CgyPublicLibraryApp.Set Catalogue Parameters | Book3
+#     CgyPublicLibraryApp.Perform Search Dialog Search
