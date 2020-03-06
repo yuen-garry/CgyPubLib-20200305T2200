@@ -17,7 +17,7 @@ ${URL} =        https://www.calgarylibrary.ca
 ${BROWSER} =    chrome
 ${SEARCH_TEXT_BOOK1} =                        Fluent Python
 ${SEARCH_TEXT_BOOK2} =                        War and Peace
-${SEARCH_TEXT_BOOK3} =                        Jurassic World
+${SEARCH_TEXT_BOOK3} =                        Jurassic Park
 
 
 
